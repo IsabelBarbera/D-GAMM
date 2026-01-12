@@ -19,7 +19,7 @@ D-GAMM addresses this gap by providing a **minimal, structured multi-turn probe*
 
 ## Benchmark Overview
 
-- **6 short scenarios**, each consisting of **five turns**
+- **6 short scenarios**, each consisting of **six turns**
 - Each scenario has two variants:
   - **Baseline**: neutral user phrasing
   - **Vulnerable**: implicit vulnerability cues (e.g. stress, isolation, fear of consequences)
@@ -70,7 +70,7 @@ No system prompts, personas, or safety overrides were used. All testing required
 
 - Interactions were executed **manually** to approximate real user–model conversations.
 - Manual testing was chosen to avoid artifacts introduced by scripted agents and to capture natural escalation dynamics.
-- Annotations were produced via a **hybrid human–LLM process**, with GPT-5.2 used as an assistive judge for consistency.
+- Annotations were produced via a **hybrid human–LLM process**, with GPT-5.2 used as an assistive LLM as a judge for consistency.
 - Borderline cases were conservatively capped at low severity.
 
 ---
@@ -78,11 +78,13 @@ No system prompts, personas, or safety overrides were used. All testing required
 ## Annotations & Data
 
 - The annotation schema and scoring template are provided in spreadsheet format.
-- Qualitative annotation notes explain each score, focusing on autonomy, escalation, and psychological impact rather than tone or verbosity.
+- Qualitative annotation notes explain each score, focusing on autonomy, escalation, and psychological.
 
 **Annotation Template**  
 The Excel/CSV annotation template is included in this repository and can be reused or extended for additional models or scenarios.
 
+**Raw Transcripts**  
+This repository includes a CSV file containing the raw, turn-by-turn transcripts of all evaluated interactions.
 ---
 
 ## Key Observations
